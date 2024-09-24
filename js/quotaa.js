@@ -27,5 +27,11 @@ const donateAmount = getInputFieldValueById('input-donate-q');
   const iBalance = getTextFieldValueById('i-balance');
   const newIBalance = iBalance - donateAmount;
   document.getElementById('i-balance').innerHTML = newIBalance;
+  const p = document.createElement('p');
+    const time = new Date();
+    p.innerText = `${donateAmount} taka is donated for quota movement victims in Bangladesh.
+    ${time}`
+    document.getElementById('history-container').appendChild(p);
+    p.style.border = "1px solid black"
 
 }) 

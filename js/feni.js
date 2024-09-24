@@ -11,6 +11,12 @@ if (isNaN(donateAmount) || donateAmount ==='' || donateAmount > balance){
   alert('Invalid donation')}else{
     const newBalance = balance + donateAmount;
     document.getElementById('account-balance-f').innerHTML = newBalance;
+    const p = document.createElement('p');
+    const time = new Date();
+    p.innerText = `${donateAmount} taka is donated for flood in Feni, Bangladesh.
+    ${time}`
+    document.getElementById('history-container').appendChild(p);
+    p.style.border = "1px solid black"
   }
   
   

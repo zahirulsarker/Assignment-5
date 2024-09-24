@@ -31,15 +31,15 @@
   </header>
   <section>
     <div class="mt-12 mx-auto w-10/12 flex justify-center gap-4 bg-white pb-8">
-      <button class="btn btn-lg">Donation</button>
-      <button class="btn btn-lg">History</button>
+      <button id="show-donation-part" class="btn btn-lg">Donation</button>
+      <button id="show-history-part" class="btn btn-lg">History</button>
       
       <!-- <button class="btn" >Donation</button>
       <button class="btn" >History</button> -->
     </div>
   </section>
-  <div id="donate-part">
-  <main class="pb-16">
+    <main class="pb-16">
+    <div id="donate-part">  
      <section class="w-10/12 mx-auto border-2 p-4 rounded-md">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <img src="./assets/noakhali.png" alt="">
@@ -137,10 +137,9 @@
     </section>
   </div>  
     <!-- History -->
-   <div id="history-part" class="w-10/12">
-    <section>
-      <div class="history-conainer"></div>
-     </section> 
+   <div id="history-part" class="w-10/12 hidden pl-8">
+    <h3 class="text-3xl text-center">Donation History</h3> 
+    <div id="history-container" class="border-2"></div>    
    </div> 
 
   </main> 
@@ -148,6 +147,7 @@
     <script src="./js/app.js"></script>
     <script src="./js/feni.js"></script>
     <script src="./js/quotaa.js"></script>
+    <script src="./js/features.js"></script>
     
   </body>
 </html>
